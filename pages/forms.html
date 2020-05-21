@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<title>Форми практическое занятие</title>
+	<link rel="stylesheet" type="text/css" href="../css/css.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<header>
+    <h1>ПРИВЕТ КАК ДЕЛА КАК ЖИЗНЬ!</h1> 
+    <em>После нескольких недель карантина стало понятно, что этим все не ограничится и мир плавно входит в серьезный экономический кризис, который не обойдет ни одну сферу (ИТ в том числе). Уже сейчас мы наблюдаем волну закрытия проектов и сокращения рабочих штатов. Можно ли найти альтернативу и что делать продуктовым компаниям?</em>
+</header>
+
+<nav>        
+  <a title="Главная страница" href="../index12.html" target="_blank">Главная страница</a>
+  <a title="Интересные факты" href="../pages/facts.html" target="_blank">Интересные факты</a>
+  <a title="Контакты" href="../pages/contacts.html" target="_blank">Контакты</a>
+  <a title="Заполнить форму" href="../pages/forms.html" target="_blank" >Заполнить форму</a>
+</nav>  
+<section>
+	<h1 class="top"><b>Форма с личными данными</b></h1>
+	<br>
+   <div class="canvas">
+      <canvas id="myCanvas"  width="300px" height="80px" style="border: 2px solid #a7a3a3; background-color:#eee;">Ваш браузер не поддерживает Canvas</canvas>
+   </div>
+
+   <script>  
+    var canvas = document.getElementById("myCanvas"),
+    context = canvas.getContext("2d");
+    context.font = "22px Verdana";
+    context.strokeStyle = "green"; 
+    context.strokeText("ПРИВЕТ МИР !!!!", 65, 50);
+   </script>
+  
+  <h4 class="grt">Нажмите, что бы повернутся на гавную страницу</h4>
+   <a href="../index12.html">
+    <svg width= "50" height = "50">
+        <circle cx ="25" cy ="25" r ="20" stroke="green" stroke-width="4" fill="yellow"/>
+    </svg>
+  </a>
+
+   <form action="" method="get"><br><br>
+	Имя:<br>
+	<input type="text" name="name"><br><br>
+	Фамилия:<br>
+	<input type="text" name="surname"><br><br>
+	Дата рождения:<input type="date" name="birthday"><br><br>
+	Страна:<select name="country" size="1">
+		<option value="Республика молдавия">Республика молдавия</option>
+		<option value ="Россия">Россия</option>
+		<option selected value="Украина" >Украина</option>
+    <option value="Белорусь">Белорусь</option>
+    <option value="Чехия">Чехия</option>
+	</select>
+	<br><br>
+   Интересы:<br>
+   <input type="checkbox" name="HTML">HTML<br>
+   <input type="checkbox" name="Javasvript">Javasvript<br>
+   <input type="checkbox" name="PHP">PHP<br>
+   <input type="checkbox" name="CSS">CSS<br>
+   <br><br>
+   E-mail:<input name="email" type="email">
+   <br><br>
+   Password:<input name="password" type="password">
+   <br><br>
+   Как часто хотите получать увидомления на электронную почту?<br>
+   <input name="question" type="radio">Ежедневно <br>
+   <input name="question" type="radio">Раз в месяц <br>
+   <input name="question" type="radio">Никогда <br><br>
+   Ваше мнение о Codifun: <br>	
+   <textarea name="opinion" cols="50" rows="8">Напишите нам....</textarea>
+   <br><br><br>
+   <input type="submit" value="Отправить">
+   <br><br><br>
+   </form>
+</section> 
+
+<footer>
+    <h3 id="demo"></h3>
+    <script>document.getElementById("demo").innerHTML = "Знание создает твое будушее :)";</script>
+</footer>  
+
+   </body>
+</html>
+	
